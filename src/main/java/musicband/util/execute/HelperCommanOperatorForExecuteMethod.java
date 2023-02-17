@@ -1,5 +1,6 @@
 package musicband.util.execute;
 
+import lombok.AllArgsConstructor;
 import musicband.command.impl.*;
 import musicband.control.Handler;
 import musicband.model.MusicBand;
@@ -15,14 +16,11 @@ import java.util.*;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class HelperCommanOperatorForExecuteMethod {
     private ArrayList<String> commands;
     private ArrayList<String> forMethod;
 
-    public HelperCommanOperatorForExecuteMethod(ArrayList<String> commands, ArrayList<String> forMethod) {
-        this.commands = commands;
-        this.forMethod = forMethod;
-    }
     /**
      * Этот метод осуществляет поиск команды и обрабатывает их
      *

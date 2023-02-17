@@ -1,5 +1,6 @@
 package musicband.util.execute;
 
+import lombok.AllArgsConstructor;
 import musicband.Storage;
 import musicband.model.*;
 
@@ -14,12 +15,9 @@ import java.util.ArrayList;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class AddExecuteUtil {
     private ArrayList<String> addCollection;
-
-    public AddExecuteUtil(ArrayList<String> addCollection) {
-        this.addCollection = addCollection;
-    }
 
     /**
      * Этот метод осуществляет сохранение в Treeset<Musicband>, находящейся в классе Storage, элемента переданного через конструктор

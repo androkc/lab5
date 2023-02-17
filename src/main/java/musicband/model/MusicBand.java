@@ -44,10 +44,6 @@ public class MusicBand implements Comparable<MusicBand> {
 
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     /**
      * Comparable по ID
      */

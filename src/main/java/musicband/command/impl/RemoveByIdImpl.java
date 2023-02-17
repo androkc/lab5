@@ -1,5 +1,6 @@
 package musicband.command.impl;
 
+import lombok.AllArgsConstructor;
 import musicband.Storage;
 import musicband.command.RemoveByIdCommand;
 import musicband.model.MusicBand;
@@ -11,12 +12,9 @@ import musicband.model.MusicBand;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class RemoveByIdImpl implements RemoveByIdCommand {
     private int id;
-
-    public RemoveByIdImpl(int id) {
-        this.id = id;
-    }
 
     /**
      * Этот метод осуществляет удаление элемента из коллекции по его id, переданного через конструктор

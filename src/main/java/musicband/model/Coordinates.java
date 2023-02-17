@@ -1,9 +1,6 @@
 package musicband.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -16,16 +13,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
  * @since 2023-02-13
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@NoArgsConstructor
+@AllArgsConstructor
 @ToString
 @Getter
 @Setter
 public class Coordinates {
     private Long x;
     private Long y;
-
-    public Coordinates(Long x, Long y) {
-        this.x = x;
-        this.y = y;
-    }
 }

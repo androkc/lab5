@@ -15,11 +15,8 @@ import java.util.*;
  * @version 1.0
  * @since 2023-02-13
  */
-@AllArgsConstructor
 @Getter
 public class Handler {
-    private Storage storage;
-
     public static String show(ShowCommand e) {
         return e.show(Storage.getStorage());
     }

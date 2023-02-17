@@ -1,5 +1,6 @@
 package musicband.command.impl;
 
+import lombok.AllArgsConstructor;
 import musicband.Storage;
 import musicband.command.UpdateIdCommand;
 import musicband.model.MusicBand;
@@ -11,16 +12,12 @@ import musicband.model.MusicBand;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class UpdateIdImpl implements UpdateIdCommand {
     private MusicBand musicBand;
     private int id;
 
     public UpdateIdImpl(int id) {
-        this.id = id;
-    }
-
-    public UpdateIdImpl(MusicBand musicBand, int id) {
-        this.musicBand = musicBand;
         this.id = id;
     }
 

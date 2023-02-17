@@ -1,5 +1,6 @@
 package musicband.command.impl;
 
+import lombok.AllArgsConstructor;
 import musicband.command.ExecuteScriptFileNameCommand;
 
 import java.io.FileReader;
@@ -13,12 +14,9 @@ import java.util.*;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class ExecuteScriptFileNameImpl implements ExecuteScriptFileNameCommand {
     String path;
-
-    public ExecuteScriptFileNameImpl(String path) {
-        this.path = path;
-    }
 
     /**
      * Этот метод считывает все строки в файле

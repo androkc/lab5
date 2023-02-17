@@ -1,5 +1,6 @@
 package musicband.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**

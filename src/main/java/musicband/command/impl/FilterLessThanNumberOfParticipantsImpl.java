@@ -1,5 +1,6 @@
 package musicband.command.impl;
 
+import lombok.AllArgsConstructor;
 import musicband.Storage;
 import musicband.command.FilterLessThanNumberOfParticipantsCommand;
 import musicband.model.MusicBand;
@@ -11,12 +12,10 @@ import musicband.model.MusicBand;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class FilterLessThanNumberOfParticipantsImpl implements FilterLessThanNumberOfParticipantsCommand {
     private Long numberOfParticipants;
 
-    public FilterLessThanNumberOfParticipantsImpl(Long numberOfParticipants) {
-        this.numberOfParticipants = numberOfParticipants;
-    }
 
     /**
      * Этот метод осуществляет подсчет элементов значение поля numberOfParticipants которых меньше заданного

@@ -1,5 +1,6 @@
 package musicband.util;
 
+import lombok.NoArgsConstructor;
 import musicband.exceptions.WrongNameException;
 
 import java.util.Scanner;
@@ -11,9 +12,8 @@ import java.util.Scanner;
  * @version 1.0
  * @since 2023-02-13
  */
+@NoArgsConstructor
 public class CommandOperatorUtil {
-    public CommandOperatorUtil() {
-    }
 
     /**
      * Этот метод осуществляет проверку строки для команды
@@ -45,5 +45,4 @@ public class CommandOperatorUtil {
             return addCommand(scanner);
         }
     }
-
 }

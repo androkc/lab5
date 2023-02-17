@@ -1,5 +1,6 @@
 package musicband.command.impl;
 
+import lombok.AllArgsConstructor;
 import musicband.Storage;
 import musicband.command.RemoveGreaterCommand;
 import musicband.model.MusicBand;
@@ -13,12 +14,9 @@ import java.util.*;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class RemoveGreaterImpl implements RemoveGreaterCommand {
     private int id;
-
-    public RemoveGreaterImpl(int id) {
-        this.id = id;
-    }
 
     /**
      * Этот метод осуществляет удаление из коллекции всех элементов, превышающих заданный из конструктора

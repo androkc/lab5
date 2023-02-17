@@ -1,5 +1,6 @@
 package musicband.command.impl;
 
+import lombok.AllArgsConstructor;
 import musicband.Storage;
 import musicband.command.RemoveLowerCommand;
 import musicband.model.MusicBand;
@@ -13,12 +14,9 @@ import java.util.Iterator;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class RemoveLowerImpl implements RemoveLowerCommand {
     private int id;
-
-    public RemoveLowerImpl(int id) {
-        this.id = id;
-    }
 
     /**
      * Этот метод осуществляет удаление из коллекции всех элементов, меньшие, чем заданный из конструктора

@@ -1,5 +1,6 @@
 package musicband.util.execute;
 
+import lombok.AllArgsConstructor;
 import musicband.control.enumcommands.EnumCommands;
 
 import java.util.ArrayList;
@@ -11,12 +12,9 @@ import java.util.ArrayList;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class CheckExecuteScrpitUtil {
     private ArrayList<String> commands;
-
-    public CheckExecuteScrpitUtil(ArrayList<String> commands) {
-        this.commands = commands;
-    }
 
     /**
      * Этот метод осуществляет проверку переданных в ArrayList строк с существующими командами в EnumCommands

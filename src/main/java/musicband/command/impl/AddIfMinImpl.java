@@ -1,5 +1,6 @@
 package musicband.command.impl;
 
+import lombok.AllArgsConstructor;
 import musicband.Storage;
 import musicband.command.AddIfMinCommand;
 import musicband.model.MusicBand;
@@ -11,17 +12,13 @@ import musicband.model.MusicBand;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class AddIfMinImpl implements AddIfMinCommand {
     private int id;
     private MusicBand musicBand;
 
     public AddIfMinImpl(int id) {
         this.id = id;
-    }
-
-    public AddIfMinImpl(int id, MusicBand musicBand) {
-        this.id = id;
-        this.musicBand = musicBand;
     }
 
     /**

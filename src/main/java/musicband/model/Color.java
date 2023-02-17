@@ -1,5 +1,6 @@
 package musicband.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
@@ -10,16 +11,13 @@ import lombok.Getter;
  * @since 2023-02-13
  */
 @Getter
+@AllArgsConstructor
 public enum Color {
     BLUE("blue"),
     YELLOW("yellow"),
     BROWN("brown");
 
     private String abbreviation;
-
-    Color(String abbreviation) {
-        this.abbreviation = abbreviation;
-    }
 
     /**
      * Этот метод сравнивает принимаемый в параметрах String с аббревиатурой команды класса Color

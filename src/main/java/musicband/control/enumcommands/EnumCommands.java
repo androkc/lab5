@@ -1,6 +1,8 @@
 package musicband.control.enumcommands;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+
 /**
  * Класс ENUM, в котором созданы команды, используемые пользователем в интерактивном режиме
  *
@@ -9,6 +11,7 @@ import lombok.Getter;
  * @since 2023-02-13
  */
 @Getter
+@AllArgsConstructor
 public enum EnumCommands {
     SHOW("show", "Вывести в стандартный поток вывода все элементы коллекции в строковом представлении."),
     INFO("info", "Вывести в стандартный поток вывода информацию о коллекции."),
@@ -29,11 +32,6 @@ public enum EnumCommands {
 
     private String abbreviation;
     private String info;
-
-    EnumCommands(String abbreviation, String info) {
-        this.abbreviation = abbreviation;
-        this.info = info;
-    }
 
     /**
      * Этот метод сравнивает принимаемый в параметрах String с аббревиатурой команды класса EnumCommands

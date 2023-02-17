@@ -1,5 +1,7 @@
 package musicband.util.execute;
 
+import lombok.AllArgsConstructor;
+
 import java.util.ArrayList;
 
 /**
@@ -9,12 +11,9 @@ import java.util.ArrayList;
  * @version 1.0
  * @since 2023-02-13
  */
+@AllArgsConstructor
 public class RemoveExecute {
     ArrayList<String> addCollection;
-
-    public RemoveExecute(ArrayList<String> addCollection) {
-        this.addCollection = addCollection;
-    }
 
     /**
      * Этот метод осуществляет поиск команды и её условия
